@@ -1,8 +1,8 @@
 const { execFile } = require('child_process');
 
 module.exports = {
-    default: async () => {
-        const serve = execFile('npx', ['http-server', 'website']);
+    default: async (options, context) => {
+        const serve = execFile('npx', ['http-server', context.projectName]);
 
         process.on('exit', () => serve.kill());
         process.on('SIGTERM', () => serve.kill());
