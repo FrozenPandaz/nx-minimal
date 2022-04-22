@@ -18,3 +18,4 @@ Notes
 3. Shouldn't need root
 4. Shouldn't need schema and package.json for executor
 5. Executor breaks if configuration is missing schema link
+6. Adding package.json to scripts adds invalid node to graph
