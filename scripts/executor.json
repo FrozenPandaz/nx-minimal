@@ -1,0 +1,8 @@
+{
+  "executors": {
+    "serve": {
+      "implementation": "./serve",
+      "schema": "./schema.json"
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "root": "website",
   "targets": {
     "serve": {
-      "executor": "scripts/executors.json:serve"
+      "executor": "./scripts:serve"
     }
   }
 }

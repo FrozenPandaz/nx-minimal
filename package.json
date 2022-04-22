@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "nx": "14.0.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
   }
 }
