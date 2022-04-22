@@ -1,8 +1,0 @@
-{
-  "root": "website",
-  "targets": {
-    "serve": {
-      "executor": "scripts/executors.json:serve"
-    }
-  }
-}

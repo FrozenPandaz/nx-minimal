@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sandwich {
+    width: 500px;
+}
+
+.ingredient {
+    margin: 5px 10px;
+}

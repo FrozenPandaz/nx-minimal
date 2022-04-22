@@ -1,5 +1,9 @@
 {
-  "dependencies": {
-    "nx": "14.0.0-beta.0"
+  "name": "sandwich-shop",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
   }
 }
