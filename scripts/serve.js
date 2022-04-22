@@ -1,12 +1,22 @@
+const { execFile } = require('child_process');
+
 module.exports = {
     default: async () => {
-        const serve = require('child_process').execFile('npx', ['http-server', 'website'], {
-        });
-        process.on('exit', serve.kill());
-        process.on('SIGTERM', serve.kill());
+        const serve = execFile('npx', ['http-server', 'website']);
+
+        process.on('exit', () => serve.kill());
+        process.on('SIGTERM', () => serve.kill());
         serve.stdout.on('data', (chunk) => {
             if (chunk.toString().indexOf('GET') === -1) {
-                process.stdout.write(chunk);
+                if (chunk.toString().indexOf('CORS') === -1) {
+                    process.stdout.write(chunk);
+                } else {
+                    process.stdout.write(`
+Your website is available at:
+    http://localhost:8080
+Hit CTRL-C to stop the server
+`);
+                }
             }
         });
         serve.stderr.on('data', (chunk) => {
