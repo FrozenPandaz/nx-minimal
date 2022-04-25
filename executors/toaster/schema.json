@@ -1,0 +1,8 @@
+{
+  "cli": "nx",
+  "properties": {
+    "duration": {
+      "type": "number"
+    }
+  }
+}

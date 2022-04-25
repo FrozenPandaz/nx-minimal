@@ -1,9 +1,12 @@
 {
   "name": "sandwich-shop",
+  "executors": "./executors/executors.json",
   "scripts": {
     "start": "http-server ."
   },
   "devDependencies": {
-    "http-server": "^14.1.0"
+    "http-server": "^14.1.0",
+    "nx": "14.0.4"
   }
 }
+

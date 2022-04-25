@@ -1,0 +1,8 @@
+{
+  "generators": {
+    "ingredient": {
+      "implementation": "./ingredient/index.js",
+      "schema": "./ingredient/schema.json"
+    }
+  }
+}

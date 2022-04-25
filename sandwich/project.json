@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "toast": {
+      "executor": ".:toaster",
+      "options": {
+        "duration": 1000
+      }
+    }
+  }
+}

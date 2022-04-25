@@ -1,0 +1,8 @@
+{
+  "executors": {
+    "toaster": {
+      "implementation": "./toaster/index.js",
+      "schema": "./toaster/schema.json"
+    }
+  }
+}

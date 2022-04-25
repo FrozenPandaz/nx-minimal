@@ -1,0 +1,14 @@
+{
+  "cli": "nx",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "thickness": {
+      "type": "number"
+    }
+  }
+}
